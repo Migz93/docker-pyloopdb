@@ -5,7 +5,7 @@ import os
 from influxdb import InfluxDBClient
 
 def elec_trace():
-	elec_usaeage = le.electricity_usage * 1000
+	elec_usaeage = le.electricity_usage * 1000;
     json_elec = [
     {
         "measurement": "W",
