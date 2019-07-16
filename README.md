@@ -56,9 +56,11 @@ influxdb                     The database in influx that you want to write to.
 
 Versions
 ------
+* 16.07.2019: - Modified to write to the "W" series in influxdb & to also send data in Watts.
 * 15.07.2019: - Initial release.
 
 Note
 ------
+* The measurement is written to the influx database in Watts as all my other IOT devices report in Watts.
 * It should be possible to run the python script directly, rather then running it in a container. You'd just need to set the variables rather than have them load.
 * I only have a very basic understanding of python, just about enough to get things to work, so if you see anything that could be improved please let me know.
