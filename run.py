@@ -5,15 +5,17 @@ import os
 from influxdb import InfluxDBClient
 
 def elec_trace():
+	elec_usaeage = le.electricity_usage * 1000
     json_elec = [
     {
-        "measurement": "loopenergy",
+        "measurement": "W",
         "tags": {
             "domain": "sensor",
-            "type": "Electricity"
+            "entity_id": "loopenergy_elec",
+			"friendly_name": "loopenergy_elec"
         },
         "fields": {
-            "value": le.electricity_useage
+            "value": elec_usaeage
         }
     }
     ]
@@ -22,10 +24,11 @@ def elec_trace():
 def gas_trace():
     json_gas = [
     {
-        "measurement": "loopenergy",
+        "measurement": "W",
         "tags": {
             "domain": "sensor",
-            "type": "Gas"
+            "entity_id": "loopenergy_gas",
+			"friendly_name": "loopenergy_gas"
         },
         "fields": {
             "value": le.gas_useage
