@@ -1,5 +1,7 @@
 # pyloopdb
- Pull data from loopenergy using pyloopenergy module and then write this to influxdb.
+[![Docker Version](https://images.microbadger.com/badges/version/miguel1993/docker-pyloopdb.svg)](https://microbadger.com/images/miguel1993/docker-pyloopdb) [![Docker Image](https://images.microbadger.com/badges/image/miguel1993/docker-pyloopdb.svg)](https://microbadger.com/images/miguel1993/docker-pyloopdb) [![Docker Pulls](https://img.shields.io/docker/pulls/miguel1993/docker-pyloopdb.svg)](https://microbadger.com/images/miguel1993/docker-pyloopdb) [![Docker Stars](https://img.shields.io/docker/stars/miguel1993/docker-pyloopdb.svg)](https://microbadger.com/images/miguel1993/docker-pyloopdb) [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+Pull data from loopenergy using pyloopenergy module and then write this to influxdb.
 
 Thanks to [pavoni](https://github.com/pavoni) for his work on creating [pyloopenergy](https://github.com/pavoni/pyloopenergy), without it this script/container wouldn't have been possible.
 
